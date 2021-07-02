@@ -17,18 +17,26 @@ body {
     background-color: $background-color;
     font-size: 1.2rem;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 body *{
     font-family: 'Poppins', sans-serif;
 }
 
+h1 {
+    color: $primary-text-color;
+    font-weight: 700 !important;
+}
+
 .mat-typography {
     max-width: 1600px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 20px;
+}
+
+.full-height-grow {
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -43,4 +51,13 @@ body *{
 .brand-logo-name {
     margin-left: 0.5rem;
     font-weight: 700;
+}
+
+.primary-btn {
+    color: $background-color;
+    background-color: $primary-action-color;
+    padding: .75rem 1.5rem;
+    border-radius: 1.5rem;
+    text-decoration: none;
+    font-size: 0.9rem;
 }
